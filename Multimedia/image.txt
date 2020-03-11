@@ -1,0 +1,22 @@
+<html>
+<head><h1><u>HTML IMAGE</h1></u></head>
+<body>
+<p><h2>Image Syntax</h2>The  <font color="red">< img ></font>  tag is empty, it contains attributes only, and does not have a closing tag.<br>
+The <font color="red">src</font> attribute specifies the URL (web address) of the image:<br><br>
+<table bgcolor="pink" cellspacing="8dp" width=600dp >
+<tr bgcolor="white" width=50dp height=20dp>
+<td align="left"><b><font size=4.5>< img src="url"></font></b></td></tr>
+</table></p>
+<p><h2>The alt Attribute</h2>The <font color="red">alt</font> attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader). If a browser cannot find an image, it will display the value of the <font color="red">alt</font> attribute.<br>The value of the <font color="red">alt</font> attribute should describe the image:<br><br>
+<table bgcolor="pink" cellspacing="8dp" width=600dp >
+<tr bgcolor="white" width=50dp height=20dp>
+<td align="left"><b>< img src="Flower.jpg"  alt="Flower"></font></b></td></tr>
+</table></p>
+<p><h2>Height & Width</h2>The width and height attributes always defines the width and height of the image in pixels.<br>
+<br><b><u>Note</u>:</b> Always specify the width and height of an image. If width and height are not specified, the page might flicker while the image loads.<br><br>
+<table bgcolor="pink" cellspacing="8dp" width=600dp >
+<tr  width=50dp height=20dp>
+<td bgcolor="white" align="left"><b><font size=4>< img  src="Flower.jpg"  alt="Flower"  width="50"  height="35"></font></b></td>
+<td align="center" width="50dp"><b><a href="img.html">Run</a></b></tr>
+</table></p>
+</body></html>
