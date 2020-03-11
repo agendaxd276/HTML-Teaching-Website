@@ -1,0 +1,156 @@
+<html>
+<head></head>
+<body>
+<u><center><font size='10'>FRAMES</font></center></u><br><br>
+<font size='5'><b>BASICS:</b></font><br>
+<ul>
+    <li>HTML frames are used to divide your browser window into multiple sections where each section can load a separate HTML document.<br> 
+	<li>A collection of frames in the browser window is known as a frameset.<br> 
+	<li>The window is divided into frames in a similar way the tables are organized: into rows and columns.<br><br>
+</ul>
+
+<font size='5'><b>CREATING FRAMES:</b></font><br>
+<ul>
+	<li>To use frames on a page we use <font color='red'>< frameset ></font> tag instead of <font color='red'>< body ></font> tag. The <font color='red'>< frameset ></font> tag defines, how to divide the window into frames.<br> The rows attribute of <frameset> tag defines horizontal frames and cols attribute defines vertical frames.<br>
+	<li>Each frame is indicated by <font color='red'>< frame ></font> tag and it defines which HTML document shall open into the frame.<br><br>
+</ul>
+
+<font size='5'><b>Frame - Set Height and Width and  Frame- Target for a Link and Frame:</b></font>
+<ul>
+	<li>Use the <font color='red'>height</font> and <font color='red'>width</font> attributes to specify the size of the iframe.<br>
+	<li>The attribute values are specified in pixels by default, but they can also be in percent (like "80%").<br>
+	<li>An frame can be used as the target frame for a link.<br>
+	<li>The target attribute of the link must refer to the name attribute of the frame:<br>
+</ul><br><br>	
+<table bgcolor="pink" cellspacing="8dp" width=600dp >
+<tr width=50dp height=20dp>
+<td  bgcolor="white">
+<code>
+<html>
+<body>
+< h2>Frame - Target for a Link< /h2><br>
+< frame height="300px" width="100%" src="demo_frame.html" name="frame_a">< /iframe><br>
+< p>< a href="https://www.w3schools.com" target="iframe_a">W3Schools.com< /a>< /p><br>
+< p>When the target of a link matches the name of an iframe, the link will open in the frame.< /p>
+</body>
+</html>	
+</code>
+</td>
+<td><a href="img.html">RUN</a>
+</tr>
+</table><br><br>	
+	
+	
+<font size='5'><b>THE <font color='red'>< FRAMESET ></font> TAG ATTRIBUTES</b></font>
+<table width=800dp>
+<tr style="background-color:rgb(240, 240, 240);" height=10dp>
+<th align="center" width=120dp>ATTRIBUTES</th>
+<th >Description</th>
+</tr>
+<tr>
+<td>< cols ></td>
+<td>
+Specifies how many columns are contained in the frameset and the size of each column. 
+<br>You can specify the width of each column in one of the four ways -
+</td>
+</tr>
+<tr>
+<td>< rows ></td>
+<td>
+This attribute works just like the cols attribute and takes the same values, but it is used to specify the rows in the frameset.
+<br> For example, to create two horizontal frames, use rows = "10%, 90%". 
+<br>You can specify the height of each row in the same way as explained above for columns.
+<br>Absolute values in pixels. For example, to create three vertical frames, use cols = "100, 500, 100".
+</td>
+</tr>
+<tr>
+<td>< framrspacing ></td>
+<td>
+This attribute specifies the amount of space between frames in a frameset. This can take any integer value. 
+<br>For example framespacing = "10" means there should be 10 pixels spacing between each frames.
+</td>
+</tr>
+<tr>
+<td>< frameborder ></td>
+<td>This attribute specifies whether a three-dimensional border should be displayed between frames. 
+<br>This attribute takes value either 1 (yes) or 0 (no). For example frameborder = "0" specifies no border.
+</td>
+</tr>
+</table><br><br>
+
+<font size='5'><b>FRAME TAGS:</b></font><br>
+<table width=800dp>
+<tr style="background-color:rgb(240, 240, 240);" height=10dp>
+<th align="center" width=120dp>TAGS</th>
+<th >Description</th>
+</tr>
+<tr>
+
+<td>< src ></td>
+
+<td>
+This attribute is used to give the file name that should be loaded in the frame.
+<br>
+ Its value can be any URL. For example, src = "/html/top_frame.htm" will load an HTML file available in html directory.
+</td>
+</tr>
+<tr>
+	
+<td>< name ></td>
+
+<td
+>This attribute allows you to give a name to a frame. It is used to indicate which frame a document should be loaded into. 
+<br>This is especially important when you want to create links in one frame that load pages into an another frame, 
+<br>in which case the second frame needs a name to identify itself as the target of the link.
+</td>
+</tr>
+<tr>
+
+
+	
+<td>< frameborder ></td>
+
+<td>This attribute specifies whether or not the borders of that frame are shown; it overrides the value given in the frameborder attribute on the <frameset> tag if one is given, 
+<br>and this can take values either 1 (yes) or 0 (no).
+</td>
+</tr>
+<tr>
+<td>< marginwidth ></td>
+
+<td>
+This attribute allows you to specify the width of the space between the left and right of the frame's borders and the frame's content.
+<br> The value is given in pixels. For example marginwidth = "10".
+</td>
+</tr>	
+<tr>
+<td>< marginheight ></td>
+
+<td>This attribute allows you to specify the height of the space between the top and bottom of the frame's borders and its contents.
+<br> The value is given in pixels. For example marginheight = "10".
+</td>
+</tr>
+<tr>	
+<td>< noresize ></td>
+
+<td>By default, you can resize any frame by clicking and dragging on the borders of a frame. The noresize attribute prevents a user from being able to resize the frame. 
+<br>For example noresize = "noresize".
+</td>
+</tr>
+<tr>
+	
+<td>< scrolling ></td>
+
+<td>This attribute controls the appearance of the scrollbars that appear on the frame. This takes values either "yes", "no" or "auto". 
+<br>For example scrolling = "no" means it should not have scroll bars.
+</td>
+</tr>
+<tr>
+	
+<td>< longdesc ></td>
+
+<td>This attribute allows you to provide a link to another page containing a long description of the contents of the frame. For example longdesc = "framedescription.htm"</td>
+</tr>
+</table>
+
+</body>
+</html>
