@@ -51,7 +51,7 @@ Here All Group Members created this page together. We divided our works in some 
 
 1. Nabanita contributes-	Introduction and Multimidea 	parts. 
 2.Samiksha contributes-	Forms and Frames	parts.
-3.Simran contributes-	Main Page, More about CSS 	parts.
+3.Meghna contributes-	Main Page, More about CSS 	parts.
 4.Aakash contributes-	Headings,Paragraph,About Us	parts.
 5.Siddharth contributes-	Attributes and Quicklinks	parts.
 6.Subhashree contributes-	Table and Links	parts.
